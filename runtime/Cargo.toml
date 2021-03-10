@@ -54,6 +54,9 @@ sp-std = { default-features = false, version = '3.0.0' }
 sp-transaction-pool = { default-features = false, version = '3.0.0' }
 sp-version = { default-features = false, version = '3.0.0' }
 
+stp258-currencies = { default-features = false, version = "0.5.0-dev", git = "https://github.com/Setheum-Labs/stp258"}
+stp258-tokens = { default-features = false, version = "0.5.0-dev", git = "https://github.com/Setheum-Labs/stp258-tokens"}
+
 [features]
 default = ['std']
 runtime-benchmarks = [
@@ -93,4 +96,6 @@ std = [
     'sp-std/std',
     'sp-transaction-pool/std',
     'sp-version/std',
+    'stp258-currencies/std',
+    'stp258-tokens/std',
 ]
